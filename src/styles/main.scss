@@ -1,0 +1,17 @@
+@import './variables';
+
+html, body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f9f4ef;
+    color: #000;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

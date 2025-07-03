@@ -1,0 +1,45 @@
+.social-column {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 4rem;
+}
+
+.social-links {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+
+  a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000;
+    transform: rotate(180deg);
+  }
+}
+
+.vertical-line {
+  height: 150px;
+  width: 1px;
+  background-color: hsl(0, 0%, 0%);
+  margin: 1.5rem 0;
+}
+
+.social-footer {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  font-size: 15px;
+  color: #000;
+}
