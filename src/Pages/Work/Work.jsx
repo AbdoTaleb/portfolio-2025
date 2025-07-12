@@ -1,4 +1,4 @@
-// src/Pages/Work.jsx
+
 import { useEffect, useState } from 'react';
 import './Work.scss';
 import Navigation from '../../components/Navigation/Navigation';
@@ -32,24 +32,24 @@ const Work = () => {
       </div>
 
       <div className="right-panel fade-in">
-        <ul className="project-list">
-          <li className="project-item">
+        <ul className="work-list">
+          <li className="work-item">
             <h2>BigID – Telenor</h2>
             <span>– Consultant, Tech Lead / Developer</span>
           </li>
-          <li className="project-item">
+          <li className="work-item">
             <h2>Vivaldi – Telenor</h2>
             <span>– Internal Admin System – Django / CSV Export</span>
           </li>
-          <li className="project-item">
+          <li className="work-item">
             <h2>Enhanced Drone Autopilot</h2>
-            <span>– School Project – Python / Hardware Integration</span>
+            <span>– School work – Python / Hardware Integration</span>
           </li>
-          <li className="project-item">
+          <li className="work-item">
             <h2>Event App (WIP)</h2>
             <span>– Web + Mobile Application – Full Stack</span>
           </li>
-          <li className="project-item">
+          <li className="work-item">
             <h2>Knowit Karlskrona</h2>
             <span>– Backend Developer – Python (Flask) + React</span>
           </li>

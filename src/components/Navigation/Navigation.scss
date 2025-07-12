@@ -1,3 +1,37 @@
+.main-nav {
+  // اللون الأساسي
+  color: black;
+
+  .vertical-text,
+  .nav-line,
+  .year {
+    color: inherit;
+  }
+
+  &.white-nav {
+    color: white;
+
+    .vertical-text,
+    .year {
+      color: white;
+    }
+    .nav-line {
+      background-color: white;
+    }
+  }
+
+  &.black-nav {
+    color: black;
+
+    .vertical-text,
+    .nav-line,
+    .year {
+      color: black;
+    }
+  }
+}
+
+
 .nav-wrapper {
   display: flex;
   flex-direction: column;

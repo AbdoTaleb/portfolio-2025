@@ -3,6 +3,7 @@ import './Hero.scss';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
+  
   return (
     <section className="hero">
       <div className="hero__left">
@@ -14,8 +15,9 @@ const Hero = () => {
         <ul>
           <li><Link to="/work">WORK</Link></li>
           <li><Link to="/about">About</Link></li>
+          <li><Link to="/projects">PROJECTS</Link></li>
+
           <li>CONTACT</li>
-          <li>RESUME</li>
         </ul>
       </div>
     </section>

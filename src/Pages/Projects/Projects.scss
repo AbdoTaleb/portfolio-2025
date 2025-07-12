@@ -1,7 +1,5 @@
 @use '../../styles/variables' as *;
-
-
-.work-page {
+.projects-page {
   position: relative;
   display: flex;
   height: 100vh;
@@ -25,13 +23,17 @@
 }
 
 
-.work-page.animate .background-overlay {
+.projects-page.animate .background-overlay {
   bottom: 0;
 }
 
+.projects-page.animate .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-.left-panel,
-.right-panel {
+.left-side,
+.right-side {
   flex: 1;
   padding: 4rem;
   color: #fff;
@@ -42,13 +44,8 @@
   transition: opacity 1s ease 0.8s, transform 1s ease 0.8s;
 }
 
-.work-page.animate .fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
 
-// توزيع الأعمدة
-.left-panel {
+.left-side {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -63,7 +60,6 @@
     text-transform: uppercase;
     color: #aaa;
   }
-
   .desc {
     font-size: 0.95rem;
     line-height: 1.8;
@@ -72,18 +68,18 @@
   }
 }
 
-.right-panel {
+.right-side {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 16vw;
 
-  .work-list {
+  .project-list {
     list-style: none;
     padding: 0;
     margin: 0;
 
-    .work-item {
+    .project-item {
       margin-bottom: 2rem;
 
       h2 {
@@ -109,3 +105,4 @@
     }
   }
 }
+
