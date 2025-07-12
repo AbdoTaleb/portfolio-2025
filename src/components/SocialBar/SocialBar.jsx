@@ -1,6 +1,6 @@
 import React from 'react'
 import './SocialBar.scss';
-
+import { Link } from "react-router-dom";
 function SocialBar() {
   return (
     <div className="social-column">

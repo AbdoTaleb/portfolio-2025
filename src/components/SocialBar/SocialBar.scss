@@ -23,10 +23,26 @@
   a {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: 500;
     letter-spacing: 1px;
     color: #000;
     transform: rotate(180deg);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+      background-color: currentColor;
+      transform: scaleY(0);
+      transition: transform 0.1s ease;
+      transform-origin: center;
+    }
+    &:hover::after {
+      transform: scaleY(1);
+    }
   }
 }
 

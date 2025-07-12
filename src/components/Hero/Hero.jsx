@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.scss';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -11,8 +12,8 @@ const Hero = () => {
       </div>
       <div className="hero__right">
         <ul>
-          <li>WORK</li>
-          <li>ABOUT</li>
+          <li><Link to="/work">WORK</Link></li>
+          <li><Link to="/about">About</Link></li>
           <li>CONTACT</li>
           <li>RESUME</li>
         </ul>

@@ -6,7 +6,7 @@ html, body {
     background-color: #f9f4ef;
     color: #000;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     width: 100%;
     overflow-x: hidden;
 }
@@ -14,4 +14,18 @@ html, body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../assets/fonts/Fontspring-DEMO-theseasons-lt.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont-2';
+  src: url('../assets/fonts/AppleGaramond-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
