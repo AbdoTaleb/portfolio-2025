@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
   const { pathname } = useLocation();
-  const navClass = pathname === '/work' || pathname === '/projects' ? 'white-nav'
+  const navClass = pathname === '/work' || pathname === '/projects' || pathname === '/contact' ? 'white-nav'
   : 'black-nav';
 
   return (

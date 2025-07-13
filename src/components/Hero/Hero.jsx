@@ -16,8 +16,7 @@ const Hero = () => {
           <li><Link to="/work">WORK</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/projects">PROJECTS</Link></li>
-
-          <li>CONTACT</li>
+          <li><Link to="/contact">CONTACT</Link></li>
         </ul>
       </div>
     </section>

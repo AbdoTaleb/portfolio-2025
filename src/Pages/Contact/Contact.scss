@@ -1,0 +1,138 @@
+@use '../../styles/variables' as *;
+
+.contact-page {
+    position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #f9f4ef;
+  overflow: hidden;
+  padding: 0;
+  transition: background-color 0.3s ease;
+
+}
+
+.background-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  z-index: 1;
+  transition: bottom 1.2s ease-out;
+}
+
+
+.contact-page.animate .background-overlay {
+  bottom: 0;
+}
+
+.contact-page.animate .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.left-container {
+  flex: 1 1 40%;
+  min-width: 300px;
+  margin-top: 20rem;
+
+  .left-side-contact {
+    flex: 1;
+  
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease 0.8s, transform 1s ease 0.8s;
+  margin-bottom: 6vw;
+  margin-left: 14vw;
+  margin-top: 2rem;
+  
+    .Hello-word {
+      font-size: 18rem;
+      font-weight: 400;
+      font-family: 'myFont', sans-serif;
+      margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        max-width: 400px;
+    }
+  }
+
+  .contact-links {
+    margin-top: 2rem;
+
+    p {
+      font-size: 0.95rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+        max-width: 400px;
+
+      a {
+        color: #fff;
+        text-decoration: underline;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.right-side-contact {
+    margin-right: 16vw;
+  flex: 1;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease 0.8s, transform 1s ease 0.8s;
+  margin-top: 8rem;
+  ;
+
+  h2 {
+    font-size: 4.5rem;
+    margin: 0;
+    font-family: $font-main;
+  }
+
+  p {
+    font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #bbb;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 1rem;
+      background-color: #1e1e1e;
+      border: 1px solid #444;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 1.4rem;
+    }
+
+    button {
+      align-self: flex-start;
+      padding: 0.8rem 2rem;
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}

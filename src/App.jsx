@@ -6,6 +6,7 @@ import About from './Pages/About/About';
 import { useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import Projects from './Pages/Projects/Projects';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
