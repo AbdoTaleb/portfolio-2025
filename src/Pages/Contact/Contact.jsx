@@ -1,6 +1,13 @@
 import React from 'react'
 import './Contact.scss'
 import { useState, useEffect } from 'react'
+import emailjs from 'emailjs-com';
+
+
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 
 function Contact() {
     const [animate, setAnimate] = useState(false); 
@@ -10,6 +17,27 @@ function Contact() {
             }, 100); 
             return () => clearTimeout(timer);
         }, []);
+
+        const sendEmail = (e) => {
+            e.preventDefault();
+
+            emailjs.sendForm(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            e.target,
+            PUBLIC_KEY
+            )
+            .then((result) => {
+            console.log(result.text);
+            alert('Message sent!');
+            })
+            .catch((error) => {
+            console.log(error.text);
+            alert('Failed to send message.');
+            });
+
+            e.target.reset();
+        };
   return (
     <section className={`contact-page ${animate ? 'animate' : ''}`}>
 
@@ -33,7 +61,7 @@ function Contact() {
         <div className='right-side-contact fade-in'>
             <h2>Contact Me</h2>
             <p>If you have any questions, feedback, or just want to say hello, feel free to reach out!</p>
-            <form>
+            <form onSubmit={sendEmail}>
                 <div>
                     <label htmlFor="name">Name</label><br />
                     <input type="text" id="name" name="name" required />
