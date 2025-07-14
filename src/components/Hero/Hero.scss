@@ -5,9 +5,12 @@
   justify-content: space-between;
   align-items: center;
   height: 100vh;
+  width: 100%;
   background-color: $bg-color;
   color: $text-color;
-  padding: 4rem 20vw; 
+  overflow: hidden;
+  margin-top: 4rem;
+  margin-left: 26rem;
   
   
 
@@ -16,8 +19,9 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    padding-bottom: 18vw;
-    margin-left: -6vw;
+    margin-bottom:26rem;
+    
+    
     
 
     .name {
@@ -34,6 +38,10 @@
     align-items: flex-end;
     text-align: right;
     padding-bottom: 8rem;
+    margin-right: 42rem;
+    
+    
+    
 
     ul {
       list-style: none;

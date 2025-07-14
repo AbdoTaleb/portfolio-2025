@@ -34,25 +34,18 @@ const Work = () => {
       <div className="right-panel fade-in">
         <ul className="work-list">
           <li className="work-item">
-            <h2>BigID – Telenor</h2>
-            <span>– Consultant, Tech Lead / Developer</span>
+            <h2>Experis</h2>
+            <span>– Full Stack Developer</span>
           </li>
           <li className="work-item">
-            <h2>Vivaldi – Telenor</h2>
-            <span>– Internal Admin System – Django / CSV Export</span>
+            <h2>Telenor</h2>
+            <span>– Consultant via Experis, Tech Lead / Developer</span>
           </li>
           <li className="work-item">
-            <h2>Enhanced Drone Autopilot</h2>
-            <span>– School work – Python / Hardware Integration</span>
-          </li>
-          <li className="work-item">
-            <h2>Event App (WIP)</h2>
+            <h2>WIP <span className='wip'>Wireless independent Provider</span></h2> 
             <span>– Web + Mobile Application – Full Stack</span>
           </li>
-          <li className="work-item">
-            <h2>Knowit Karlskrona</h2>
-            <span>– Backend Developer – Python (Flask) + React</span>
-          </li>
+          
         </ul>
 
       </div>
