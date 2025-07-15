@@ -15,11 +15,13 @@
   
 
   &__left {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
     margin-bottom:26rem;
+    margin-right: 10rem;
     
     
     
@@ -28,6 +30,11 @@
       font-weight: 600;
       margin-bottom: 1rem;
     }
+  }
+  &__subtitle {
+      font-family: "Edu QLD Hand", cursive;
+      font-size: 1rem;
+      color: #222;
   }
 
   &__right {
@@ -60,7 +67,7 @@
         cursor: pointer;
 
         &:hover {
-          transform: translateX(10px);
+          transform: translateX(10px) skewX(-5deg);;
           color: #999;
         }
       }

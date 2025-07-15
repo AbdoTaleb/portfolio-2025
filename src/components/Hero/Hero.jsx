@@ -8,8 +8,11 @@ const Hero = () => {
     <section className="hero">
       <div className="hero__left">
         <p>ABDO TALEB</p>
-        <p>Frontend Developer / React Specialist / Designer</p>
-        <p>Currently open to work in Malmö, Sweden</p>
+        <p className="hero__subtitle">
+          Software Engineer | Frontend & Backend Developer | 
+          Passionate about Web Apps & User-Centered Design.
+        </p>
+        <p className="hero__subtitle">Currently open to work in Malmö, Sweden</p>
       </div>
       <div className="hero__right">
         <ul>
