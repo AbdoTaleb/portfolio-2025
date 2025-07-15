@@ -1,12 +1,28 @@
-# React + Vite
+# Abdo Taleb — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive, and interactive portfolio website built with **React** and **SCSS**, showcasing my experience as a frontend/backend developer with a strong focus on **user-centered design**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Animated transitions and hover effects
+- 🎨 Custom-designed sections: Work, About, Projects, Contact
+- 📨 Functional contact form with [EmailJS](https://www.emailjs.com/)
+- 🧠 Smooth UX, keyboard-friendly navigation, and accessibility in mind
+- 📱 Fully responsive across desktop, tablet, and mobile
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://reactjs.org/)
+- [SCSS](https://sass-lang.com/)
+- [React Router](https://reactrouter.com/)
+- [EmailJS](https://www.emailjs.com/)
+
+## 📬 Contact
+
+Feel free to reach out!
+
+- **Email**: abdo.taleb1@hotmail.com  
+- **LinkedIn**: [linkedin.com/in/abdo-taleb](https://www.linkedin.com/in/abdo-taleb/)  
+- **GitHub**: [github.com/AbdoTaleb](https://github.com/AbdoTaleb)
+
+
