@@ -14,7 +14,7 @@ function Projects() {
     }, []);
   return (
     <section className={`projects-page ${animate ? 'animate' : ''}`}>
-        <Navigation />
+        {/* <Navigation /> */}
         <div className="background-overlay"></div>
       <div className='left-side fade-in'>
         <p className="label">Projects</p>

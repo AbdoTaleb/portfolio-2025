@@ -126,5 +126,73 @@
   }
 }
 
+@media (max-width: 768px) {
+  .projects-page {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .left-side,
+  .right-side {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transform: none;
+    transition: none;
+    width: 100%;
+  }
+
+  .left-side {
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+
+    .label {
+      font-size: 0.8rem;
+    }
+
+    .desc {
+      font-size: 0.85rem;
+      max-width: 100%;
+    }
+  }
+
+  .right-side {
+    margin: 0;
+
+    .project-list {
+      .project-item {
+        text-align: start;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+
+        h2 {
+          font-size: 2rem;
+          text-align: start;
+        }
+
+        span {
+          font-size: 0.75rem;
+          display: block;
+          text-align: start;
+        }
+
+        small {
+          font-size: 0.6rem;
+          padding: 2px 4px;
+          display: inline-block;
+        }
+
+        .project-visit-btn {
+          font-size:0.8rem;
+          display: block;
+          margin: 1rem 12rem 0 auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
 
 
