@@ -11,8 +11,6 @@
   overflow: hidden;
   margin-top: 4rem;
   margin-left: 26rem;
-  
-  
 
   &__left {
     position: relative;
@@ -20,21 +18,19 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    margin-bottom:26rem;
+    margin-bottom: 26rem;
     margin-right: 10rem;
-    
-    
-    
 
     .name {
       font-weight: 600;
       margin-bottom: 1rem;
     }
   }
+
   &__subtitle {
-      font-family: "Edu QLD Hand", cursive;
-      font-size: 1rem;
-      color: #222;
+    font-family: "Edu QLD Hand", cursive;
+    font-size: 1rem;
+    color: #222;
   }
 
   &__right {
@@ -46,9 +42,6 @@
     text-align: right;
     padding-bottom: 8rem;
     margin-right: 42rem;
-    
-    
-    
 
     ul {
       list-style: none;
@@ -67,10 +60,89 @@
         cursor: pointer;
 
         &:hover {
-          transform: translateX(10px) skewX(-5deg);;
+          transform: translateX(10px) skewX(-5deg);
           color: #999;
         }
       }
+    }
+  }
+
+  // 🖥️ شاشات كبيرة (كمبيوتر)
+  @media (max-width: 1200px) {
+    margin-left: 12rem;
+
+    &__right {
+      margin-right: 20rem;
+    }
+
+    &__left {
+      margin-bottom: 16rem;
+    }
+  }
+
+  // 📱 موبايل
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-left: 2rem;
+    align-items: center;
+    text-align: center;
+
+    &__left {
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+      height: auto;
+    }
+
+    &__right {
+      align-items: center;
+      margin-right: 0;
+      padding-bottom: 4rem;
+
+      ul {
+        font-size: 10vw;
+
+        li {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // 📱📱 شاشات أصغر (موبايلات صغيرة جدًا)
+  @media (max-width: 480px) {
+    &__subtitle {
+      width: 60%;
+      font-size: 0.9rem;
+    }
+
+    &__right ul {
+      font-size: 12vw;
+    }
+  }
+
+  // 📱📱 آيباد أو تابلت
+  @media (max-width: 992px) and (min-width: 769px) {
+    margin-left: 5rem;
+
+    &__right {
+      margin-right: 10rem;
+    }
+
+    &__left {
+      margin-bottom: 10rem;
+    }
+
+    &__right ul {
+      font-size: 7vw;
+    }
+    &__left {
+      margin-left: 5rem;
+    }
+    &__subtitle {
+      width: 100%;
+      font-size: 0.9rem;
+      margin-bottom: 6rem;
     }
   }
 }

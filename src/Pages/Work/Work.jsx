@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <section className={`work-page ${animate ? 'animate' : ''}`}>
-      <Navigation />
+      
       <div className="background-overlay"></div>
 
       <div className="left-panel fade-in">

@@ -96,3 +96,47 @@
   color: rgb(2, 2, 2);
   opacity: 0.7;
 }
+
+// 📱 للموبايلات والشاشات الصغيرة
+@media (max-width: 768px) {
+  .main-nav {
+    width: 100%;
+    //position: fixed;
+    //bottom: 0;
+    //left: 0;
+    //background: #111; // خلفية مناسبة على الموبايل
+    z-index: 1000;
+    //padding: 0.5rem 1rem;
+
+    .nav-wrapper {
+      //flex-direction: row;
+      //justify-content: space-around;
+      //align-items: center;
+      //height: auto;
+      //margin: 0;
+      //padding: 0;
+      //position: static;
+      margin-right: 2rem;
+      padding-left: 1rem;
+    }
+
+    .nav-home {
+      //flex-direction: row;
+      //gap: 1rem;
+    }
+
+    .vertical-text,
+    .year {
+      //writing-mode: horizontal-tb;
+      //transform: none;
+      font-size: 0.85rem;
+      //color: white;
+      opacity: 0.9;
+      //text-align: center;
+    }
+
+    .nav-line {
+      // display: none;
+    }
+  }
+}
