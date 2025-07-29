@@ -65,40 +65,35 @@
 
 @media (max-width: 768px) {
   .social-column {
-    //position: static;
-    //flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
-    //height: auto;
-    padding-left: 1rem;
-    margin: 4rem 0 0 1.5rem;
-    gap: 1.5rem;
-    //padding-bottom:1rem;
-  }
+  position: absolute; // أو relative حسب التخطيط العام
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //height: 80vh; // أو auto إذا بتحب
+  left: 0;
+  top: 0;
+  padding-left: 1rem;
+  margin: 0rem 0 0 1.5rem;
+  margin-top: 6rem;
+  gap: 4rem;
+  z-index: 1000; // مهم لضمان أنها فوق المحتوى
+}
+
 
   .social-links {
-    //flex-direction: column;
     gap: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     
 
-    a {
-      //writing-mode: horizontal-tb;
-      //transform: none;
-      font-size: 0.95rem;
-      //position: relative;
-
-      
-    }
+    
   }
 
   
 
   .social-footer {
-    //writing-mode: horizontal-tb;
-    //transform: none;
-    font-size: 0.85rem;
+    margin-top: 8rem;
     color: #000;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
   }
 }
