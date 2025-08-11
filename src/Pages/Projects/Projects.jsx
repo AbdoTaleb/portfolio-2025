@@ -24,6 +24,22 @@ function Projects() {
 
       <div className='right-side fade-in'>
         <ul className="project-list">
+          <li className='project-item'>
+                <h2>SneakX E-Commerce</h2>
+                <span>Sneaker store: product listing with images, pagination, and product details.
+                      Backend hosted on Render (.NET 8 Web API) with Azure SQL for data.</span> <br />
+                <span><strong>Technologies:</strong> React, SCSS, Axios, ASP.NET Core Web API, SQL Server (Azure)</span>
+                <a 
+                  href="https://sneakx-frontend.vercel.app/" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="project-visit-btn"
+                >
+                  Visit Project
+                </a>
+
+            </li>
+            
             <li className='project-item'>
                 <h2>Munamii Cakery</h2>
                 <span>A fully responsive online cake shop built with React, featuring product filtering and cart functionality.</span> <br />

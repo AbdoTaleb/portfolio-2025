@@ -65,19 +65,19 @@
 
 @media (max-width: 768px) {
   .social-column {
-  position: absolute; // أو relative حسب التخطيط العام
+  position: absolute; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //height: 80vh; // أو auto إذا بتحب
+  
   left: 0;
   top: 0;
   padding-left: 1rem;
   margin: 0rem 0 0 1.5rem;
   margin-top: 4rem;
   gap: 4rem;
-  z-index: 1000; // مهم لضمان أنها فوق المحتوى
+  z-index: 1000; 
 }
 
 
