@@ -1,4 +1,4 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 .hero {
   display: flex;
@@ -48,7 +48,7 @@
       padding: 0;
       margin: 0;
       font-family: $font-main;
-      font-size: 9vw;
+      font-size: 6.5vw;
       font-weight: 500;
       line-height: 1.1;
       letter-spacing: -0.02em;
@@ -67,7 +67,6 @@
     }
   }
 
-  // 🖥️ شاشات كبيرة (كمبيوتر)
   @media (max-width: 1200px) {
     margin-left: 12rem;
 
@@ -80,7 +79,6 @@
     }
   }
 
-  // 📱 موبايل
   @media (max-width: 768px) {
     flex-direction: column;
     margin-left: 1rem;
@@ -109,7 +107,6 @@
     }
   }
 
-  // 📱📱 شاشات أصغر (موبايلات صغيرة جدًا)
   @media (max-width: 480px) {
     &__subtitle {
       width: 60%;
@@ -121,7 +118,6 @@
     }
   }
 
-  // 📱📱 آيباد أو تابلت
   @media (max-width: 992px) and (min-width: 769px) {
     margin-left: 5rem;
 
