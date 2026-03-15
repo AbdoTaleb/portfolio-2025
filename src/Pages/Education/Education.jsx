@@ -46,6 +46,124 @@ function Education() {
           </li>
         </ul>
       </div>
+      <div className="right-side fade-in">
+        <ul className="education-list">
+          <li className="education-item">
+            <h2>ONLINE COURSES</h2>
+            <ul className="courses-list">
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/F9U82GDZNHS7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Advanced Django: Building a Blog ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/1S7S9FFZ0DHW"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Advanced Django: Introduction to Django REST Framework ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/Z5RN7HOHMYGZ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Developing Front-End Apps with React ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/MUW4D8ZWT27Q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Introduction to Containers w/ Docker, Kubernetes & OpenShift ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/DUDTARVWBJS9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AWS ECS & Fargate ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/LGP7FRD6EHAA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AWS Elastic Beanstalk:Deploy a Python(Flask) Web Application ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/95XMPG63XV86"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Containerized Apps on AWS ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/GWL9QZ67NZCJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Automation in AWS Cloud ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/5L6PC3TNGX4Z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Introduction to MongoDB ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/VDDV355JS93K"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Version Control ↗
+                </a>
+              </li>
+
+              <li className="courses-item">
+                <a
+                  href="https://www.coursera.org/account/accomplishments/certificate/LVRFFXNLU4W8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Data Integration & ETL with Talend ↗
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
   );
 }

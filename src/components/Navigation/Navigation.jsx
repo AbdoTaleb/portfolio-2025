@@ -20,7 +20,7 @@ const Navigation = () => {
           <div className="nav-line" />
         </div>
 
-        <p className="year">© / 2025</p>
+        <p className="year">© / 2026</p>
       </div>
     </nav>
   );
