@@ -1,4 +1,4 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 .projects-page {
   position: relative;
   display: flex;
@@ -10,7 +10,6 @@
   transition: background-color 0.3s ease;
 }
 
-
 .background-overlay {
   position: absolute;
   bottom: -100%;
@@ -21,7 +20,6 @@
   z-index: 1;
   transition: bottom 1.2s ease-out;
 }
-
 
 .projects-page.animate .background-overlay {
   bottom: 0;
@@ -41,9 +39,10 @@
   z-index: 2;
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1s ease 0.8s, transform 1s ease 0.8s;
+  transition:
+    opacity 1s ease 0.8s,
+    transform 1s ease 0.8s;
 }
-
 
 .left-side {
   display: flex;
@@ -71,8 +70,9 @@
 .right-side {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   margin-right: 16vw;
+  margin-bottom: 6vw;
 
   .project-list {
     list-style: none;
@@ -83,7 +83,7 @@
       margin-bottom: 2rem;
 
       h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 0;
         font-family: $font-main;
       }
@@ -185,7 +185,7 @@
         }
 
         .project-visit-btn {
-          font-size:0.8rem;
+          font-size: 0.8rem;
           display: block;
           margin: 1rem 12rem 0 auto;
           text-align: center;
@@ -194,5 +194,3 @@
     }
   }
 }
-
-

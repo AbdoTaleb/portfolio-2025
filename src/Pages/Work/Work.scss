@@ -1,5 +1,4 @@
-@use '../../styles/variables' as *;
-
+@use "../../styles/variables" as *;
 
 .work-page {
   position: relative;
@@ -12,7 +11,6 @@
   transition: background-color 0.3s ease;
 }
 
-
 .background-overlay {
   position: absolute;
   bottom: -100%;
@@ -24,11 +22,9 @@
   transition: bottom 1.2s ease-out;
 }
 
-
 .work-page.animate .background-overlay {
   bottom: 0;
 }
-
 
 .left-panel,
 .right-panel {
@@ -39,7 +35,9 @@
   z-index: 2;
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1s ease 0.8s, transform 1s ease 0.8s;
+  transition:
+    opacity 1s ease 0.8s,
+    transform 1s ease 0.8s;
 }
 
 .work-page.animate .fade-in {
@@ -75,8 +73,9 @@
 .right-panel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   margin-right: 16vw;
+  margin-bottom: 6vw;
 
   .work-list {
     list-style: none;
@@ -106,18 +105,14 @@
         margin-left: 0.5rem;
         border-radius: 3px;
       }
-      .wip{
+      .wip {
         font-size: 1.6rem;
         text-transform: uppercase;
         color: #bbb;
-      
-  }
+      }
     }
   }
-
-  
 }
-
 
 @media (max-width: 768px) {
   .work-page {
@@ -188,9 +183,7 @@
   }
 }
 
-
 @media (max-width: 1024px) {
-  
   .work-page {
     padding: 3rem 2rem;
   }
@@ -201,7 +194,6 @@
 
     .desc {
       font-size: 0.9rem;
-      
     }
   }
 
@@ -215,7 +207,7 @@
     .work-list .work-item {
       font-size: 1.3rem;
     }
-    .wip{
+    .wip {
       font-size: 1rem;
     }
   }
