@@ -31,7 +31,7 @@ function Education() {
       <div className="right-side fade-in">
         <ul className="education-list">
           <li className="education-item">
-            <h2>AI Programmer</h2>
+            <h2>System developer .NET</h2>
             <span>Lexicon Malmö — May 2025 – Feb 2026</span>
           </li>
 
