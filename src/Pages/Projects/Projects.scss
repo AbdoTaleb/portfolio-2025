@@ -66,13 +66,15 @@
     max-width: 400px;
   }
 }
-
+.projects-page.animate .right-side.fade-in {
+  transform: translateY(130px);
+}
 .right-side {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-right: 16vw;
-  margin-bottom: 6vw;
+  margin-top: 3rem;
 
   .project-list {
     list-style: none;
