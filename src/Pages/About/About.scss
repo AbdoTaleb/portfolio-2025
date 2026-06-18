@@ -2,7 +2,7 @@
   padding: 2rem 10vw;
   background-color: #faf6f1;
   color: #111;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   line-height: 1.7;
   max-width: 1200px;
   margin: 0 auto;
@@ -26,12 +26,12 @@
   position: relative;
   font-family: "Edu QLD Hand", cursive;
 }
-.about-word{
+.about-word {
   font-family: "MyFont-2", sans-serif;
   font-size: 18rem;
   z-index: 2;
 }
-.about-intro{
+.about-intro {
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -59,6 +59,7 @@ h1 {
   font-family: "Edu QLD Hand", cursive;
   color: #444;
   margin-bottom: 2rem;
+  max-width: 1100px;
 }
 
 .quotes {
@@ -69,7 +70,7 @@ h1 {
 }
 
 h3 {
-  font-family: 'MyFont', system-ui;
+  font-family: "MyFont", system-ui;
   font-size: 2.8rem;
   margin-top: 4rem;
   color: #222;
@@ -87,10 +88,10 @@ h4 {
 p {
   font-size: 1.6rem;
   margin-top: 1rem;
-  max-width: 800px;
+  width: 75%;
+  max-width: 1100px;
   white-space: pre-line;
 }
-
 
 .bullet-list {
   font-family: "Quicksand", sans-serif;
@@ -100,54 +101,157 @@ p {
   color: #222; // أو اللون المستخدم لباقي النص
 }
 
-
-@media (max-width: 768px) {
-  h3 {
-      font-size: 2rem;
-      margin-left: 1.8rem;
-    }
-  h4 {
-      font-size: 1.5rem;
-      margin-left: 1.8rem;
-    }
-    .bullet-list {
-      font-size: 1.4rem;
-      margin-left: 1.8rem;
-    }
-  .about-hero {
-    //flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-
-    .about-word {
-      font-size: 6rem;
-    }
-
-    .about-img {
-      width: 160px;
-      height: 200px;
-      margin-top: 0;
-      margin-left: 0;
-    }
-    .about-word{
-      font-size: 3rem;
-      margin-left: 2rem;
-    }
-    
+@media (max-width: 1400px) and (min-width: 993px) {
+  .about-page {
+    max-width: 1050px;
+    padding: 2rem 6vw;
   }
+
+  .about-hero {
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-word {
+    font-size: 13rem;
+    width: 70%;
+  }
+  .about-intro {
+    width: 70%;
+  }
+
+  .about-img {
+    width: 280px;
+    height: 380px;
+    margin-top: -10px;
+    margin-left: -35px;
+  }
+
   .about-me {
-      font-size: 2rem;
-      margin-left: 1.8rem;
+    font-size: 2.1rem;
+    max-width: 1100px;
+  }
+
+  .quotes {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  p,
+  .bullet-list {
+    font-size: 1.4rem;
+    max-width: 760px;
+  }
+
+  .education-list {
+    margin-top: 2rem;
+  }
+
+  .education-item {
+    display: grid;
+    grid-template-columns: 140px 1fr 220px;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+
+  .education-date {
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .education-content {
+    h4 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 700;
     }
-    .about-intro {
-      font-size: 1.5rem;
-      margin-left: 1.8rem;
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      max-width: 100%;
     }
-    .quotes {
-      font-size: 1.8rem;
-      margin-left: 1.8rem;
+  }
+
+  .education-school {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .education-item {
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
     }
-    
+
+    .education-school {
+      text-align: left;
+    }
+  }
 }
 
+@media (max-width: 992px) and (min-width: 769px) {
+  .about-page {
+    padding: 2rem 5vw;
+  }
+
+  .about-word {
+    font-size: 9rem;
+  }
+
+  .about-img {
+    width: 220px;
+    height: 300px;
+    margin-left: -25px;
+  }
+
+  .about-me,
+  .quotes {
+    font-size: 1.9rem;
+  }
+
+  p,
+  .bullet-list {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 2rem 1.2rem;
+  }
+
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-word {
+    font-size: 5rem;
+    margin-left: 0;
+  }
+
+  .about-img {
+    width: 180px;
+    height: 230px;
+    margin: 0;
+  }
+  .about-me,
+  .about-intro,
+  .quotes,
+  .bullet-list,
+  h3,
+  h4 {
+    margin-left: 0;
+  }
+}

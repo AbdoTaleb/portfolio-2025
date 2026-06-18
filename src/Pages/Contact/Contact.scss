@@ -1,7 +1,7 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 .contact-page {
-    position: relative;
+  position: relative;
   display: flex;
   height: 100vh;
   width: 100%;
@@ -9,7 +9,6 @@
   overflow: hidden;
   padding: 0;
   transition: background-color 0.3s ease;
-
 }
 
 .background-overlay {
@@ -22,7 +21,6 @@
   z-index: 1;
   transition: bottom 1.2s ease-out;
 }
-
 
 .contact-page.animate .background-overlay {
   bottom: 0;
@@ -40,29 +38,31 @@
 
   .left-side-contact {
     flex: 1;
-  
-  color: #fff;
-  position: relative;
-  z-index: 2;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease 0.8s, transform 1s ease 0.8s;
-  margin-bottom: 6vw;
-  margin-left: 14vw;
-  margin-top: 2rem;
-  
+
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+      opacity 1s ease 0.8s,
+      transform 1s ease 0.8s;
+    margin-bottom: 6vw;
+    margin-left: 14vw;
+    margin-top: 2rem;
+
     .Hello-word {
       font-size: 18rem;
       font-weight: 400;
-      font-family: 'myFont', sans-serif;
+      font-family: "myFont", sans-serif;
       margin-bottom: 2rem;
     }
 
     p {
-        font-size: 0.95rem;
-        line-height: 1.8;
-        margin-bottom: 1rem;
-        max-width: 400px;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      max-width: 400px;
     }
   }
 
@@ -71,9 +71,9 @@
 
     p {
       font-size: 0.95rem;
-        line-height: 1.8;
-        margin-bottom: 1rem;
-        max-width: 400px;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      max-width: 400px;
 
       a {
         color: #fff;
@@ -85,17 +85,20 @@
 }
 
 .right-side-contact {
-    margin-right: 16vw;
-  flex: 1;
+  flex: 1 1 50%;
+  max-width: 520px;
+  width: 100%;
+  margin-right: 16vw;
+
   color: #fff;
   position: relative;
   z-index: 2;
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1s ease 0.8s, transform 1s ease 0.8s;
+  transition:
+    opacity 1s ease 0.8s,
+    transform 1s ease 0.8s;
   margin-top: 8rem;
-  ;
-
   h2 {
     font-size: 4.5rem;
     margin: 0;
@@ -104,8 +107,8 @@
 
   p {
     font-size: 0.8rem;
-        text-transform: uppercase;
-        color: #bbb;
+    text-transform: uppercase;
+    color: #bbb;
   }
 
   form {
@@ -137,7 +140,6 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .contact-page {
     flex-direction: column;
@@ -152,7 +154,6 @@
     margin: 0;
     opacity: 1;
     margin-left: 4rem;
-    width: 80%;
   }
 
   .left-container {
@@ -173,7 +174,7 @@
     }
 
     .contact-links {
-      margin-top: .5rem;
+      margin-top: 0.5rem;
       text-align: start;
 
       p {
@@ -210,6 +211,63 @@
 
       button {
         align-self: start;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) and (min-width: 993px) {
+  .contact-page {
+    height: 100vh;
+  }
+
+  .left-container {
+    margin-top: 14rem;
+    flex: 1 1 55%;
+
+    .left-side-contact {
+      margin-left: 14rem;
+      margin-bottom: 4rem;
+
+      .Hello-word {
+        font-size: 13rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+        max-width: 380px;
+      }
+    }
+  }
+
+  .right-side-contact {
+    margin-top: 7rem;
+    margin-right: 8rem;
+    max-width: 420px;
+    width: 100%;
+
+    h2 {
+      font-size: 3.8rem;
+    }
+
+    p {
+      font-size: 0.68rem;
+    }
+
+    form {
+      gap: 1rem;
+
+      input,
+      textarea {
+        padding: 0.8rem;
+        font-size: 1rem;
+      }
+
+      textarea {
+        height: 130px;
+      }
+
+      button {
+        padding: 0.6rem 1.5rem;
       }
     }
   }

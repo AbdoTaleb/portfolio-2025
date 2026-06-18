@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero__left">
-        <p>ABDO TALEB</p>
+        <p className="name">ABDO TALEB</p>
         <p className="hero__subtitle">Software Engineer | Frontend & Backend Developer | Passionate about Web Apps & User-Centered Design.</p>
         <p className="hero__subtitle">Currently open to work in Malmö, Sweden</p>
       </div>
