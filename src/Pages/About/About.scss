@@ -5,7 +5,8 @@
   font-family: "Segoe UI", sans-serif;
   line-height: 1.7;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: 6rem;
+  margin-top: 4rem;
   overflow-x: hidden;
 
   opacity: 0;
@@ -35,6 +36,18 @@
   font-family: "Poiret One", sans-serif;
   font-weight: 400;
   font-style: normal;
+  width: 100%;
+}
+.education-content {
+  width: 100%;
+  max-width: 1300px;
+}
+p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1300px;
+  white-space: pre-line;
 }
 
 .about-img {
@@ -43,8 +56,8 @@
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  margin-top: -30px;
-  margin-left: -55px;
+  margin-top: 1rem;
+  margin-left: 14rem;
 }
 
 h1 {
@@ -59,7 +72,8 @@ h1 {
   font-family: "Edu QLD Hand", cursive;
   color: #444;
   margin-bottom: 2rem;
-  max-width: 1100px;
+  max-width: 1300px;
+  width: 100%;
 }
 
 .quotes {
@@ -89,7 +103,7 @@ p {
   font-size: 1.6rem;
   margin-top: 1rem;
   width: 75%;
-  max-width: 1100px;
+  max-width: 1300px;
   white-space: pre-line;
 }
 
@@ -99,9 +113,11 @@ p {
   font-weight: 400;
   line-height: 1.8;
   color: #222; // أو اللون المستخدم لباقي النص
+  width: 100%;
+  max-width: 1300px;
 }
 
-@media (max-width: 1400px) and (min-width: 993px) {
+@media (max-width: 1400px) and (min-width: 769px) {
   .about-page {
     max-width: 1050px;
     padding: 2rem 6vw;
@@ -113,21 +129,24 @@ p {
   }
 
   .about-word {
+    //padding-left: 1rem;
     font-size: 13rem;
     width: 70%;
   }
   .about-intro {
-    width: 70%;
+    width: 100%;
+    max-width: 1100px;
   }
 
   .about-img {
     width: 280px;
     height: 380px;
-    margin-top: -10px;
+    margin-top: -5px;
     margin-left: -35px;
   }
 
   .about-me {
+    width: 100%;
     font-size: 2.1rem;
     max-width: 1100px;
   }
@@ -147,7 +166,8 @@ p {
   p,
   .bullet-list {
     font-size: 1.4rem;
-    max-width: 760px;
+    max-width: 1050px;
+    width: 100%;
   }
 
   .education-list {
@@ -186,72 +206,61 @@ p {
     font-weight: 600;
     text-align: right;
   }
-
-  @media (max-width: 768px) {
-    .education-item {
-      grid-template-columns: 1fr;
-      gap: 0.8rem;
-    }
-
-    .education-school {
-      text-align: left;
-    }
-  }
-}
-
-@media (max-width: 992px) and (min-width: 769px) {
-  .about-page {
-    padding: 2rem 5vw;
-  }
-
-  .about-word {
-    font-size: 9rem;
-  }
-
-  .about-img {
-    width: 220px;
-    height: 300px;
-    margin-left: -25px;
-  }
-
-  .about-me,
-  .quotes {
-    font-size: 1.9rem;
-  }
-
-  p,
-  .bullet-list {
-    font-size: 1.35rem;
-  }
 }
 
 @media (max-width: 768px) {
   .about-page {
-    padding: 2rem 1.2rem;
+    margin-left: 4.5rem;
+    padding: 0;
+    margin-right: 2rem;
+    width: 100%;
+    max-width: 350px;
+    //padding: 2rem 1.2rem;
   }
 
   .about-hero {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: start;
+    text-align: strart;
   }
 
   .about-word {
-    font-size: 5rem;
-    margin-left: 0;
+    font-size: 3rem;
+    margin-top: 7rem;
+
+    //margin-left: 0;
   }
 
   .about-img {
     width: 180px;
     height: 230px;
-    margin: 0;
+    //margin: 0;
+    margin-top: -12rem;
+    margin-left: 10rem;
   }
-  .about-me,
-  .about-intro,
-  .quotes,
+  .about-me {
+    font-size: 1.3rem;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 2rem;
+  }
   .bullet-list,
-  h3,
+  .quotes,
+  .about-intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 350px;
+  }
   h4 {
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  h3 {
     margin-left: 0;
+    width: 100%;
+    max-width: 350px;
   }
 }

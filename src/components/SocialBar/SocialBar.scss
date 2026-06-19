@@ -1,21 +1,20 @@
 .social-column {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 80vh;
-  margin-top: 6rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   position: absolute;
   left: 0;
   top: 0;
-  padding-left: 4rem;
-  
+  padding: 0;
+  margin-left: 2rem;
+  //padding-left: 4rem;
 }
 
 .social-links {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +29,7 @@
     color: #000;
     transform: rotate(180deg);
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       bottom: 0;
@@ -61,35 +60,27 @@
   color: #000;
 }
 
-
-
 @media (max-width: 768px) {
   .social-column {
-  position: absolute; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  left: 0;
-  top: 0;
-  padding-left: 1rem;
-  margin: 0rem 0 0 1.5rem;
-  margin-top: 4rem;
-  gap: 4rem;
-  z-index: 1000; 
-}
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    left: 0;
+    top: 0;
+    padding-left: 1rem;
+    margin: 0rem 0 0 1.5rem;
+    margin-top: 4rem;
+    gap: 4rem;
+    z-index: 1000;
+  }
 
   .social-links {
     gap: 1.2rem;
     margin-bottom: 4rem;
-    
-
-    
   }
-
-  
 
   .social-footer {
     margin-top: 8rem;
